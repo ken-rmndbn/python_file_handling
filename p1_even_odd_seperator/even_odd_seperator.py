@@ -5,4 +5,7 @@ class EvenOddSeperator:
 
     def read_number(self):
         try:
-            with open(self.input_filename),
+            with open(self.input_filename, "r") as file:
+                self.numbers = [int(line.strip())for line in file if line.strip()]
+        except FileNotFoundError:
+            print(f"Error! there is no {self.input_filename}")
