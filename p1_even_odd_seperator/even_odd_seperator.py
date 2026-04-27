@@ -13,6 +13,7 @@ class EvenOddSeperator:
     def split_and_save(self):
         if not self.numbers:
             print("There is no number to process")
+            return
 
         with open("even.txt", "w") as even_file, open("odd.txt", "w") as odd_file:
             for number in self.numbers:
@@ -20,3 +21,11 @@ class EvenOddSeperator:
                     even_file.write(f"{number}\n")
                 else:
                     odd_file.write(f"{number}\n")
+
+        print("Files 'even.txt' and 'odd.txt' created successfully")
+
+if __name__ == "__main__":
+    processor = EvenOddSeperator("numbers.txt")
+
+    processor.read_number()
+    processor.split_and_save()
