@@ -9,3 +9,7 @@ class EvenOddSeperator:
                 self.numbers = [int(line.strip())for line in file if line.strip()]
         except FileNotFoundError:
             print(f"Error! there is no {self.input_filename}")
+
+    def split_and_save(self):
+        if not self.numbers:
+            print("There is no number to process")
