@@ -27,4 +27,9 @@ class HighestGeneralWeightedAverage:
     def display_result(self):
         if self.top_student:
             print(f"The student with the highest gwa is {self.top_student} with a grade of {self.highest_gwa}")
-            
+
+if __name__ == "__main__":
+    students = HighestGeneralWeightedAverage("gwa.txt")
+    students.find_highest_gwa()
+
+
