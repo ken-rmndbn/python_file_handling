@@ -11,3 +11,9 @@ class MultipleLineWriting:
 
                 if choice == "n":
                     break
+
+        print(f"\nDone! All lines saved to {self.filename}")
+
+if __name__ == "__main__":
+    line_writing = MultipleLineWriting("mylife.txt")
+    line_writing.write_entries()
