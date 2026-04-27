@@ -23,5 +23,8 @@ class HighestGeneralWeightedAverage:
             print("Error gwa.txt not found")
         except ValueError:
             print("Error! Make sure the file contains only names and numbers")
-            
 
+    def display_result(self):
+        if self.top_student:
+            print(f"The student with the highest gwa is {self.top_student} with a grade of {self.highest_gwa}")
+            
