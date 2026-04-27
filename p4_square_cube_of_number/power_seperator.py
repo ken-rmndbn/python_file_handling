@@ -18,3 +18,6 @@ class PowerSeperator:
             for number in self.numbers:
                 square_number = number ** 2
                 cube_number = number ** 3
+
+                square_file.write(f"{square_number}\n")
+                cube_file.write(f"{cube_number}\n")
