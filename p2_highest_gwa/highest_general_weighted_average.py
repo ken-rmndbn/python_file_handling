@@ -12,3 +12,11 @@ class HighestGeneralWeightedAverage:
                     if len(parts) >= 2:
                         name = parts[0]
                         gwa = float(parts[1])
+
+                        if gwa < self.highest_gwa:
+                            self.highest_gwa = gwa
+                            self.top_student = name
+
+            self.display_result()
+
+        excep
