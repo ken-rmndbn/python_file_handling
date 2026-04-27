@@ -21,3 +21,10 @@ class PowerSeperator:
 
                 square_file.write(f"{square_number}\n")
                 cube_file.write(f"{cube_number}\n")
+
+        print("Processing completed for double.txt and triple.txt")
+
+if __name__ == "__main__":
+    seperator = PowerSeperator("integers.txt")
+    seperator.read_integers()
+    seperator.process_and_save()
