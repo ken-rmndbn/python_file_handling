@@ -13,3 +13,6 @@ class PowerSeperator:
     def process_and_save(self):
         if not self.numbers:
             return
+
+        with open("double.txt", "w") as square_file, open("triple.txt", "w") as cube_file:
+            
