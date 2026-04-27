@@ -11,3 +11,4 @@ class HighestGeneralWeightedAverage:
                     parts = line.split()
                     if len(parts) >= 2:
                         name = parts[0]
+                        gwa = float(parts[1])
