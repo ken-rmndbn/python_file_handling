@@ -19,4 +19,9 @@ class HighestGeneralWeightedAverage:
 
             self.display_result()
 
-        excep
+        except FileNotFoundError:
+            print("Error gwa.txt not found")
+        except ValueError:
+            print("Error! Make sure the file contains only names and numbers")
+            
+
