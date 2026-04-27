@@ -15,4 +15,6 @@ class PowerSeperator:
             return
 
         with open("double.txt", "w") as square_file, open("triple.txt", "w") as cube_file:
-            
+            for number in self.numbers:
+                square_number = number ** 2
+                cube_number = number ** 3
