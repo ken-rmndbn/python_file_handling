@@ -4,4 +4,10 @@ class MultipleLineWriting:
 
     def write_entries(self):
         with open(self.filename, "w") as file:
-            
+            while True:
+                line = input("Enter line: ")
+                file.write(line + "\n")
+                choice = input("Are there more lines y/n? ").lower()
+
+                if choice == "n":
+                    break
